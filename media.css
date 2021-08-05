@@ -87,6 +87,7 @@
 
 /* Les plus populaires */
 .mostpop {
+  display: flex;
 }
 
   /* Recreations */

@@ -18,15 +18,24 @@
     margin-top: 5px;
   }
 
+  .header {
+    background-image: url("images/Reservia.svg");
+    background-repeat: no-repeat;
+    background-position: 25px 25px;
+  }
+
   .logo {
     padding-top: 35px;
   }
   .navbar {
     display: flex;
+    width: 100%;
+    justify-content: flex-end;
   }
 
   .navbar ul {
     display: flex;
+    margin: 0px;
   }
 
   .navbar ul li {
@@ -105,13 +114,12 @@ footer {
 
 @media  (max-width: 675px) {
   /* Header */
-  .content1 {
-    border-bottom: 1px solid lightgrey;
-  }
 
   .header {
     display: flex;
-    margin-bottom: -35px;
+    background-image: url("images/Reservia.svg");
+    background-repeat: no-repeat;
+    background-position: 25px 25px;
   }
 
   .navbar {
@@ -122,52 +130,53 @@ footer {
     display: flex;
     order: 2;
     justify-content: space-between;
-  }
-
-  li a {
-    display: flex;
-    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
   }
 
   .menu2 {
     order: 1;
+    padding: 0px;
   }
 
   .navbar {
     flex-direction: column;
     justify-content: flex-end;
     align-items: end;
-  }
-
-  .logo {
-    padding-top: 0;
-    padding-bottom: 50px;
+    width: 100%
   }
 
   .navbar ul li {
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid white;
+    width: 50%;
   }
 
-  .activities {
-    padding-left: 50px;
+  li a {
+    text-align: center;
   }
 
   .signup {
     color:#0065fc;
+    padding-top: 23px;
   }
 
-  .navbar ul li {
-    border-bottom: 2px solid white;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+  .accommodation {
+    width: 100%;
+  }
 
-.menu1 li:hover {
-  border-color: #0065fc;
-}
+  .activities {
+    width: 100%;
+  }
 
-.menu1 li:hover a {
-  color: #0065fc;
-}
+  .menu1 li:hover {
+    border-color: #0065fc;
+  }
+
+  .menu1 li:hover a {
+    color: #0065fc;
+  }
 }

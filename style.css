@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700;800;900&display=swap');
 
- /* Header */
-
-/* Intro: content2 */
-/* Location placeholder Marseille, France */
+/* Intro: content2
+ Location placeholder Marseille, France */
 .introForm {
   display: inline-flex;
   max-width: 100%;
@@ -134,6 +132,15 @@ height: 50px;
 }
 
  /* Lodging */
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main > *:nth-child(1) {
+  order: 2;
+}
+
 .lodgecard1,
 .lodgecard2,
 .lodgecard3,
@@ -190,6 +197,10 @@ height: 50px;
 }
 
 /* Les plus populaires */
+main > *:nth-child(2) {
+  order: 1;
+}
+
 .lodgecard7 a,
 .lodgecard8 a,
 .lodgecard9 a {
@@ -226,6 +237,10 @@ height: 50px;
   object-fit: cover;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
+}
+
+.recreations h4 {
+  padding-top: .5em;
 }
 
 /* Footer */

@@ -39,17 +39,19 @@
     <h2 class="introCatch">Trouvez votre hébergement pour des vacances de rêve</h2>
     <p class="introSubtitle">En plein centre ville ou en pleine nature</p>
 
-    <!--Search form-->
-    <form class="introForm" action="proceedFrom.html" method="GET">
-      <span class="locationIcon"><i class="fas fa-map-marker-alt"></i></span>
-      <input class="locationInput" type="search" placeholder="Marseille, France">
-      <button class="submit">
+  <!-- Search bar-->
+  <div class="searchbar">
+    <form class="introForm" action="#">
+      <a class="locationIcon" href="#"><i class="fas fa-map-marker-alt"></i></a>
+      <input class="locationInput" type="text" placeholder="Marseille, France" name="search">
+      <button class="submit" type="submit">
         <span class="btnText">Rechercher</span>
-        <i class="searchIcon fas fa-search"></i>
+        <i class="searchIcon fa fa-search"></i>
       </button>
     </form>
+  </div>
 
-    <!--Filters-->
+  <!--Filters-->
     <section class="filters">
       <h3 class="filtersTitle">Filtres</h3>
 
@@ -101,12 +103,124 @@
   </div><!--./Content2: Intro-->
 
 
-  <!--Content4: Aside, Les plus populaires-->
-  <div class="content4">
-    <div class="popIcon">
-      <h3 class="mostpopTitle">Les plus populaires</h3>
-      <i class="fas fa-chart-line fa-2x popArrow"></i>
-    </div>
+  <main class="main">
+
+    <!--Content3: Main, Hébergement à Marseille-->
+    <div class="content3">
+
+        <h3 class="lodgingTitle">Hébergements à Marseille</h3>
+
+          <section class="lodging">
+
+            <!--LodgeCard1-->
+            <div class="lodgecard1">
+              <a href="images/lacannebiere.jpg">
+                <img class="lodge1" src="images/lacannebiere.jpg" alt="bunk beds">
+                  <h4 class="lodgeTitle">Auberge la Cannebière</h4>
+                    <p class="lodgeNight">Nuit à partir de <strong class="lodgePrice">25€</strong></p>
+                      <div class="lodgeStar">
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star grey"></i>
+                      </div>
+              </a>
+            </div>
+
+          <!--LodgeCard2-->
+          <div class="lodgecard2">
+            <a href="images/hotel_duport.jpg">
+              <img class="lodge2" src="images/hotel_duport.jpg" alt="twin room">
+                <h4 class="lodgeTitle">Hôtel du port</h4>
+                  <p class="lodgeNight">Nuit à partir de 52 <strong class="lodgePrice">€</strong></p>
+                    <div class="lodgeStar">
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star blue"></i>
+                    </div>
+            </a>
+          </div>
+
+          <!--LodgeCard3-->
+          <div class="lodgecard3">
+            <a href="images/lesmouettes.jpg">
+              <img class="lodge3" src="images/lesmouettes.jpg" alt="marble room">
+                <h4 class="lodgeTitle">Hôtel Les mouettes</h4>
+                  <p class="lodgeNight">Nuit à partir de 76 <strong class="lodgePrice">€</strong></p>
+                    <div class="lodgeStar">
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star grey"></i>
+                    </div>
+            </a>
+          </div>
+
+          <!--LodgeCard4-->
+          <div class="lodgecard4">
+            <a href="images/hotel_delamer.jpg">
+              <img class="lodge4" src="images/hotel_delamer.jpg" alt="blue board single room">
+                <h4 class="lodgeTitle">Hôtel de la mer</h4>
+                  <p class="lodgeNight">Nuit à partir de 46 <strong class="lodgePrice">€</strong></p>
+                    <div class="lodgeStar">
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star grey"></i>
+                      <i class="fas fa-star grey"></i>
+                    </div>
+            </a>
+          </div>
+
+          <!--LodgeCard5-->
+          <div class="lodgecard5">
+            <a href="images/lepanier.jpg">
+              <img class="lodge5" src="images/lepanier.jpg" alt="wood bunk beds">
+                <h4 class="lodgeTitle">Auberge Le Panier</h4>
+                  <p class="lodgeNight">Nuit à partir de <strong class="lodgePrice">23€</strong></p>
+                  <div class="lodgeStar">
+                    <i class="fas fa-star blue"></i>
+                    <i class="fas fa-star blue"></i>
+                    <i class="fas fa-star blue"></i>
+                    <i class="fas fa-star blue"></i>
+                    <i class="fas fa-star grey"></i>
+                  </div>
+              </a>
+          </div>
+
+          <!--LodgeCard6-->
+          <div class="lodgecard6">
+            <a href="images/chez_amina.jpg">
+              <img class="lodge6" src="images/chez_amina.jpg" alt="brightly lit room">
+                <h4 class="lodgeTitle">Hôtel chez Amina</h4>
+                  <p class="lodgeNight">Nuit à partir de 96 <strong class="lodgePrice">€</strong></p>
+                    <div class="lodgeStar">
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star blue"></i>
+                      <i class="fas fa-star blue"></i>
+                    </div>
+            </a>
+          </div>
+
+      <a class="moreresults" href="#">Afficher plus</a>
+
+        </section><!--./Lodging-->
+
+    </div><!--./Content3: Main, Hébergement à Marseille-->
+
+
+    <!--Content4: Aside, Les plus populaires-->
+    <div class="content4">
+      <div class="popIcon">
+        <h3 class="mostpopTitle">Les plus populaires</h3>
+        <i class="fas fa-chart-line fa-2x popArrow"></i>
+      </div>
 
       <aside class="mostpop">
 
@@ -166,123 +280,11 @@
           </a>
         </div>
 
-
       </aside>
 
   </div><!--./Content4: Aside, Les plus populaires-->
 
-
-  <!--Content3: Main, Hébergement à Marseille-->
-  <div class="content3">
-    <main class="main">
-      <h3 class="lodgingTitle">Hébergements à Marseille</h3>
-
-        <section class="lodging">
-
-          <!--LodgeCard1-->
-          <div class="lodgecard1">
-            <a href="images/lacannebiere.jpg">
-              <img class="lodge1" src="images/lacannebiere.jpg" alt="bunk beds">
-                <h4 class="lodgeTitle">Auberge la Cannebière</h4>
-                  <p class="lodgeNight">Nuit à partir de <strong class="lodgePrice">25€</strong></p>
-                    <div class="lodgeStar">
-                      <i class="fas fa-star blue"></i>
-                      <i class="fas fa-star blue"></i>
-                      <i class="fas fa-star blue"></i>
-                      <i class="fas fa-star blue"></i>
-                      <i class="fas fa-star grey"></i>
-                    </div>
-            </a>
-          </div>
-
-        <!--LodgeCard2-->
-        <div class="lodgecard2">
-          <a href="images/hotel_duport.jpg">
-            <img class="lodge2" src="images/hotel_duport.jpg" alt="twin room">
-              <h4 class="lodgeTitle">Hôtel du port</h4>
-                <p class="lodgeNight">Nuit à partir de 52 <strong class="lodgePrice">€</strong></p>
-                  <div class="lodgeStar">
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                  </div>
-          </a>
-        </div>
-
-        <!--LodgeCard3-->
-        <div class="lodgecard3">
-          <a href="images/lesmouettes.jpg">
-            <img class="lodge3" src="images/lesmouettes.jpg" alt="marble room">
-              <h4 class="lodgeTitle">Hôtel Les mouettes</h4>
-                <p class="lodgeNight">Nuit à partir de 76 <strong class="lodgePrice">€</strong></p>
-                  <div class="lodgeStar">
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star grey"></i>
-                  </div>
-          </a>
-        </div>
-
-        <!--LodgeCard4-->
-        <div class="lodgecard4">
-          <a href="images/hotel_delamer.jpg">
-            <img class="lodge4" src="images/hotel_delamer.jpg" alt="blue board single room">
-              <h4 class="lodgeTitle">Hôtel de la mer</h4>
-                <p class="lodgeNight">Nuit à partir de 46 <strong class="lodgePrice">€</strong></p>
-                  <div class="lodgeStar">
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star grey"></i>
-                    <i class="fas fa-star grey"></i>
-                  </div>
-          </a>
-        </div>
-
-        <!--LodgeCard5-->
-        <div class="lodgecard5">
-          <a href="images/lepanier.jpg">
-            <img class="lodge5" src="images/lepanier.jpg" alt="wood bunk beds">
-              <h4 class="lodgeTitle">Auberge Le Panier</h4>
-                <p class="lodgeNight">Nuit à partir de <strong class="lodgePrice">23€</strong></p>
-                <div class="lodgeStar">
-                  <i class="fas fa-star blue"></i>
-                  <i class="fas fa-star blue"></i>
-                  <i class="fas fa-star blue"></i>
-                  <i class="fas fa-star blue"></i>
-                  <i class="fas fa-star grey"></i>
-                </div>
-            </a>
-        </div>
-
-        <!--LodgeCard6-->
-        <div class="lodgecard6">
-          <a href="images/chez_amina.jpg">
-            <img class="lodge6" src="images/chez_amina.jpg" alt="brightly lit room">
-              <h4 class="lodgeTitle">Hôtel chez Amina</h4>
-                <p class="lodgeNight">Nuit à partir de 96 <strong class="lodgePrice">€</strong></p>
-                  <div class="lodgeStar">
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                  </div>
-          </a>
-        </div>
-
-    <a class="moreresults" href="#">Afficher plus</a>
-
-      </section><!--./Lodging-->
-
-    </main>
-
-  </div><!--./Content3: Main, Hébergement à Marseille-->
-
+  </main>
 
   <!--Content5: Article, Activités à Marseille-->
   <div class="content5">
@@ -298,6 +300,7 @@
           </a>
         </div>
 
+      <div class="twocards">
         <!--ActivityCard2-->
         <div class="activitycard2">
           <a href="images/pomegues.jpg">
@@ -313,6 +316,7 @@
             <h4 class="activitiesTitle">Îles du Frioul</h4>
           </a>
         </div>
+      </div>
 
         <!--ActivityCard4-->
         <div class="activitycard4">
@@ -322,6 +326,7 @@
           </a>
         </div>
 
+      <div class="twocards">
         <!--ActivityCard5-->
         <div class="activitycard5">
           <a href="images/dame-delagarde.jpg">
@@ -336,9 +341,8 @@
             <img class="activities6" src="images/longchamp.jpg" alt="Parc Longchamp">
             <h4 class="activitiesTitle">Parc Longchamp</h4>
           </a>
-
         </div>
-
+      </div>
       </article>
 
   </div><!--./Content5: Article, Activités à Marseille-->

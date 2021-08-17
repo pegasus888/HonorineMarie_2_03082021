@@ -33,11 +33,15 @@ body {
 .content3,
 .content4,
 .content5,
-.content6,
 form {
   padding-block: 1rem;
   padding-inline: 1.5rem;
   margin-block-end: 2rem;
+}
+
+.content3,
+.content4 {
+  width: 100%;
 }
 
 h2 {

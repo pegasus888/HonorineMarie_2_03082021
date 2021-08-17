@@ -1,4 +1,12 @@
-@media  (min-width: 675px) {
+/*
+@media  (min-width: 675px) and (max-width: 950px) {
+  /* Lodging
+  .main {
+    flex-direction: column-reverse;
+  }
+}*/
+
+@media  (min-width: 650px) {
 
   /* Background */
 .content3 {
@@ -74,6 +82,7 @@
   font-size: 1rem;
   cursor: pointer;
   width: 10rem;
+  letter-spacing: .0625em;
 }
 
 .btnText {
@@ -89,7 +98,8 @@
 main {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 1.5em;
+  padding-inline: 1.5rem;
 }
 
 main > *:nth-child(1) {
@@ -107,22 +117,38 @@ main > *:nth-child(1) {
 
 main > *:nth-child(2) {
   flex: 1 1 25%;
-  min-width: 15ch;
+  min-width: 183px;
 }
 
-.lodging {
+.lodging1,
+.lodging2 {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 1em;
 }
 
-.lodgecard1,
-.lodgecard2,
-.lodgecard3,
-.lodgecard4,
-.lodgecard5,
-.lodgecard6 {
-  width: 230px;
+.lodging1 > * {
+  flex: 1 1 30%;
+}
+
+.lodging2 > * {
+  flex: 1 1 30%;
+}
+
+  /* Les plus populaires */
+
+/*.mostpop > * {
+  flex: 1 1 100%;
+} */
+
+.content4 {
+  width: 100%;
+  min-width: 183px;
+}
+
+.lodgecard8 img {
+  width: 43%;
 }
 
   /* Recreations */
@@ -133,51 +159,66 @@ main > *:nth-child(2) {
 
 .activitycard1,
 .activitycard4 {
+  height: 100%;
+}
+
+.activitycard2,
+.activitycard6 {
+  height: 50%;
+}
+
+.activitycard3,
+.activitycard5 {
+  height: 40%;
+}
+
+.activitycard1,
+.activitycard4 {
   width: 25%;
-  height: 530px;
 }
 
 .activitycard1 img,
 .activitycard4 img {
   width: 100%;
-  height: 480px;
+  min-height: 480px;
 }
 
 .activitycard2,
 .activitycard6 {
 width: 100%;
-height: 200px;
 }
 
 .activitycard2 img,
 .activitycard6 img {
 width: 100%;
-height: 150px;
+min-height: 150px;
 }
 
 .activitycard3 {
   width: 100%;
-  height: 160px;
 }
 
 .activitycard3 img {
   width: 100%;
-  height: 120px;
-  padding-bottom: .6em;
-}
-
-.activitycard3 h4 {
-  padding-top: 0.0125em;
+  min-height: 120px;
 }
 
 .activitycard5 {
   width: 100%;
-  height: 160px;
 }
 
 .activitycard5 img {
   width: 100%;
-  height: 120px;
+  min-height: 120px;
+}
+
+.activitycard1,
+.activitycard2,
+.activitycard3,
+.activitycard4,
+.activitycard5,
+.activitycard6 {
+  margin-bottom: 0;
 }
 
 .twocards {
@@ -185,7 +226,6 @@ height: 150px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 1em;
 }
 
   /* Footer */
@@ -195,7 +235,7 @@ footer {
 }
 }
 
-@media  (max-width: 675px) {
+@media  (max-width: 650px) {
   /* Header */
 
   .header {
@@ -216,7 +256,7 @@ footer {
     margin: 0px;
     padding: 0px;
     width: 100%;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid white;
   }
 
   .menu2 {
@@ -234,8 +274,13 @@ footer {
   .navbar ul li {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid lightgrey;
     width: 50%;
+  }
+
+  .navbar .menu2 li {
+    border-bottom: 2px solid white;
+    padding-right: 10px;
   }
 
   li a {

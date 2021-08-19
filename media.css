@@ -1,12 +1,110 @@
-/*
-@media  (min-width: 675px) and (max-width: 950px) {
-  /* Lodging
-  .main {
-    flex-direction: column-reverse;
-  }
-}*/
+@media  (max-width: 730px) {
+  /* Header */
 
-@media  (min-width: 650px) {
+  .header {
+    display: flex;
+    background-image: url("images/Reservia.svg");
+    background-repeat: no-repeat;
+    background-position: 25px 25px;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  .menu1 {
+    display: flex;
+    order: 2;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+
+  .menu2 {
+    order: 1;
+    padding: 0px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    width: 100%
+  }
+
+  .navbar ul li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid lightgrey;
+    width: 50%;
+  }
+
+  .navbar .menu2 li {
+    border-bottom: 2px solid white;
+    padding-right: 10px;
+  }
+
+  li a {
+    text-align: center;
+  }
+
+  .signup {
+    color:#0065fc;
+    padding-top: 23px;
+  }
+
+  .accommodation {
+    width: 100%;
+  }
+
+  .activities {
+    width: 100%;
+  }
+
+  .menu1 li:hover {
+    border-color: #0065fc;
+  }
+
+  .menu1 li:hover a {
+    color: #0065fc;
+  }
+}
+
+@media  (min-width: 470px) and (max-width: 730px) {
+
+  /* Lodging */
+.lodging1,
+.lodging2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2em;
+  flex-wrap: wrap;
+  }
+
+  /* Footer */
+footer {
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+}
+
+@media  (min-width: 620px) and (max-width: 1350px) {
+main {
+  flex-direction: column;
+}
+
+  .mostpop {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+  }
+}
+
+@media  (min-width: 730px) {
 
   /* Background */
 .content3 {
@@ -87,7 +185,7 @@
 
 .btnText {
   display: block;
-  padding-top: 1.5em;
+  padding-top: 1.2em;
 }
 
 .searchIcon {
@@ -136,21 +234,6 @@ main > *:nth-child(2) {
   flex: 1 1 30%;
 }
 
-  /* Les plus populaires */
-
-/*.mostpop > * {
-  flex: 1 1 100%;
-} */
-
-.content4 {
-  width: 100%;
-  min-width: 183px;
-}
-
-.lodgecard8 img {
-  width: 43%;
-}
-
   /* Recreations */
 .recreations {
   display: flex;
@@ -162,14 +245,20 @@ main > *:nth-child(2) {
   height: 100%;
 }
 
-.activitycard2,
-.activitycard6 {
-  height: 50%;
+.activitycard2 {
+  height: 53%;
 }
 
-.activitycard3,
-.activitycard5 {
+.activitycard3 {
   height: 40%;
+}
+
+.activitycard5 {
+  height: 45%;
+}
+
+.activitycard6 {
+  height: 49%;
 }
 
 .activitycard1,
@@ -180,7 +269,7 @@ main > *:nth-child(2) {
 .activitycard1 img,
 .activitycard4 img {
   width: 100%;
-  min-height: 480px;
+  min-height: 430px;
 }
 
 .activitycard2,
@@ -188,28 +277,24 @@ main > *:nth-child(2) {
 width: 100%;
 }
 
-.activitycard2 img,
-.activitycard6 img {
-width: 100%;
-min-height: 150px;
+.activitycard2 img {
+  width: 100%;
+  min-height: 210px;
 }
 
-.activitycard3 {
-  width: 100%;
+.activitycard6 img {
+width: 100%;
+min-height: 194px;
 }
 
 .activitycard3 img {
   width: 100%;
-  min-height: 120px;
-}
-
-.activitycard5 {
-  width: 100%;
+  min-height: 152px;
 }
 
 .activitycard5 img {
   width: 100%;
-  min-height: 120px;
+  min-height: 176px;
 }
 
 .activitycard1,
@@ -235,76 +320,15 @@ footer {
 }
 }
 
-@media  (max-width: 650px) {
-  /* Header */
+@media (min-width: 1350px) {
+  /* Les plus populaires */
 
-  .header {
-    display: flex;
-    background-image: url("images/Reservia.svg");
-    background-repeat: no-repeat;
-    background-position: 25px 25px;
-  }
-
-  .navbar {
-    display: flex;
-  }
-
-  .menu1 {
-    display: flex;
-    order: 2;
-    justify-content: space-between;
-    margin: 0px;
-    padding: 0px;
+  .content4 {
     width: 100%;
-    border-bottom: 1px solid white;
+    min-width: 183px;
   }
 
-  .menu2 {
-    order: 1;
-    padding: 0px;
-  }
-
-  .navbar {
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: end;
-    width: 100%
-  }
-
-  .navbar ul li {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid lightgrey;
-    width: 50%;
-  }
-
-  .navbar .menu2 li {
-    border-bottom: 2px solid white;
-    padding-right: 10px;
-  }
-
-  li a {
-    text-align: center;
-  }
-
-  .signup {
-    color:#0065fc;
-    padding-top: 23px;
-  }
-
-  .accommodation {
-    width: 100%;
-  }
-
-  .activities {
-    width: 100%;
-  }
-
-  .menu1 li:hover {
-    border-color: #0065fc;
-  }
-
-  .menu1 li:hover a {
-    color: #0065fc;
+  .lodgecard8 img {
+    width: 43%;
   }
 }

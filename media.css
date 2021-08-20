@@ -70,9 +70,14 @@
   .menu1 li:hover a {
     color: #0065fc;
   }
+
 }
 
 @media  (min-width: 470px) and (max-width: 730px) {
+ /* Content2 */
+.introCatch {
+  text-align: center;
+}
 
   /* Lodging */
 .lodging1,
@@ -92,16 +97,144 @@ footer {
 }
 }
 
+@media (min-width: 730px) and (max-width: 1100px) {
+  /* Recreations */
+.recreations {
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.twocards {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.activitycard1,
+.activitycard2,
+.activitycard3,
+.activitycard4,
+.activitycard5,
+.activitycard6 {
+  width: 300px;
+}
+
+.activitycard1,
+.activitycard4 {
+  margin-inline: auto;
+}
+}
+
+@media (min-width: 1100px) {
+  /* Recreations */
+.recreations {
+  display: flex;
+  gap: 1em;
+}
+
+.activitycard1,
+.activitycard4 {
+height: 100%;
+}
+
+.activitycard2 {
+height: 53%;
+}
+
+.activitycard3 {
+height: 40%;
+}
+
+.activitycard5 {
+height: 45%;
+}
+
+.activitycard6 {
+height: 49%;
+}
+
+.activitycard1,
+.activitycard4 {
+width: 25%;
+}
+
+.activitycard1 img,
+.activitycard4 img {
+width: 100%;
+min-height: 430px;
+}
+
+.activitycard2,
+.activitycard6 {
+width: 100%;
+}
+
+.activitycard2 img {
+width: 100%;
+min-height: 210px;
+}
+
+.activitycard6 img {
+width: 100%;
+min-height: 194px;
+}
+
+.activitycard3 img {
+width: 100%;
+min-height: 152px;
+}
+
+.activitycard5 img {
+width: 100%;
+min-height: 176px;
+}
+
+.activitycard1,
+.activitycard2,
+.activitycard3,
+.activitycard4,
+.activitycard5,
+.activitycard6 {
+margin-bottom: 0;
+}
+
+.twocards {
+width: 25%;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}
+}
+
+
 @media  (min-width: 620px) and (max-width: 1350px) {
 main {
   flex-direction: column;
 }
 
-  .mostpop {
-    flex-direction: row;
-    justify-content: center;
-    gap: 1em;
-  }
+.mostpop {
+  justify-content: center;
+  gap: 1em;
+}
+
+.lodgecard7,
+.lodgecard9 {
+  width: 300px;
+}
+
+.lodgecard8 {
+  width: 350px;
+}
+
+.lodgecard7 {
+  align-self: flex-start;
+}
+
+.lodgecard9 {
+  align-self: flex-end;
+}
 }
 
 @media  (min-width: 730px) {
@@ -142,7 +275,7 @@ main {
   }
 
   .navbar ul li {
-    border-top: 1px solid white;
+    border-top: 2px solid white;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 35px;
@@ -158,6 +291,7 @@ main {
 
   .signup {
     color:#0065fc;
+    margin-left: -20px;
   }
 
   .accommodation {
@@ -166,6 +300,8 @@ main {
 
   .activities {
     padding-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
   /* Rechercher btn */
@@ -232,85 +368,6 @@ main > *:nth-child(2) {
 
 .lodging2 > * {
   flex: 1 1 30%;
-}
-
-  /* Recreations */
-.recreations {
-  display: flex;
-  gap: 1em;
-}
-
-.activitycard1,
-.activitycard4 {
-  height: 100%;
-}
-
-.activitycard2 {
-  height: 53%;
-}
-
-.activitycard3 {
-  height: 40%;
-}
-
-.activitycard5 {
-  height: 45%;
-}
-
-.activitycard6 {
-  height: 49%;
-}
-
-.activitycard1,
-.activitycard4 {
-  width: 25%;
-}
-
-.activitycard1 img,
-.activitycard4 img {
-  width: 100%;
-  min-height: 430px;
-}
-
-.activitycard2,
-.activitycard6 {
-width: 100%;
-}
-
-.activitycard2 img {
-  width: 100%;
-  min-height: 210px;
-}
-
-.activitycard6 img {
-width: 100%;
-min-height: 194px;
-}
-
-.activitycard3 img {
-  width: 100%;
-  min-height: 152px;
-}
-
-.activitycard5 img {
-  width: 100%;
-  min-height: 176px;
-}
-
-.activitycard1,
-.activitycard2,
-.activitycard3,
-.activitycard4,
-.activitycard5,
-.activitycard6 {
-  margin-bottom: 0;
-}
-
-.twocards {
-  width: 25%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
 }
 
   /* Footer */

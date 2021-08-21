@@ -62,31 +62,31 @@
   color: #0065fc;
   height: 50px;
   width: 50px;
-  border: 1px solid #deebff;
+  border: 12px solid #deebff;
   border-radius: 50%;
   justify-content: center;
   align-content: center;
-  padding: 15px 15px;
-  margin-right: 10px;
-  margin-top: -2px;
+  padding: 4px;
+  margin-right: 14px;
+  margin-top: -3px;
   background: #deebff;
 }
 
 .wrapIconInfo {
   color: #0065fc;
+  background-color: white;
   height: 30px;
   width: 30px;
-  border: 1px solid #deebff;
+  border: 1px solid lightgrey;
   border-radius: 50%;
-  text-align: center;
   padding: 6px;
   margin-right: 10px;
   margin-left: -5px;
-  margin-top: -10px;
+  margin-top: -5px;
+  text-align: center;
 }
 
 .filtersCategories {
-  font-weight: 700;
   margin-right: 50px;
   margin-bottom: .625em;
 }
@@ -115,7 +115,11 @@ border-right: 2px solid lightgrey;
 border-bottom: 2px solid lightgrey;
 border-left: none;
 border-radius: 2rem 2rem 2rem 2rem;
-padding-left: 20px;
+font-weight: 700;
+font-family: inherit;
+background: white;
+font-size: 1rem;
+transition-duration: 0.4s;
 }
 
 .pets {
@@ -124,7 +128,7 @@ height: 50px;
 }
 
 .smallcard {
-  margin-left: -20px;
+  margin-left: -30px;
 }
 
 .filters {
@@ -133,21 +137,29 @@ height: 50px;
   align-items: center;
 }
 
-.economic:hover,
-.family:hover,
-.romantic:hover,
-.pets:hover {
-  color: rgb(105, 24, 66);
-  background: lightgreen;
-  opacity: .6;
-  cursor: pointer;
-}
-
 .informationText {
   display: flex;
   margin-top: 1.5em;
   margin-left: 1em;
   padding-left: .5em;
+}
+
+.economic:hover,
+.family:hover,
+.romantic:hover,
+.pets:hover {
+  color: green;
+  background: rgb(167, 235, 10);
+  opacity: .7;
+  cursor: pointer;
+}
+
+.economic:focus,
+.family:focus,
+.romantic:focus,
+.pets:focus {
+  color: yellow;
+  background: green;
 }
 
  /* Lodging */

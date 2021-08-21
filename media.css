@@ -328,6 +328,25 @@ main {
   opacity: 0;
   }
 
+  /* Filters */
+.economic:hover,
+.family:hover,
+.romantic:hover,
+.pets:hover {
+  color: darkgreen;
+  background: lightgreen;
+  opacity: .6;
+  cursor: pointer;
+}
+
+.economic:focus,
+.family:focus,
+.romantic:focus,
+.pets:focus {
+  color: darkgreen;
+  background: rgb(176, 207, 176);
+}
+
   /* Lodging */
 main {
   display: flex;

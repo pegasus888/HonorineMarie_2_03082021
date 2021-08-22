@@ -3,7 +3,7 @@
 
   .header {
     display: flex;
-    background-image: url("images/Reservia.svg");
+    background-image: url("../images/Reservia.svg");
     background-repeat: no-repeat;
     background-position: 25px 25px;
   }
@@ -89,11 +89,57 @@
   flex-wrap: wrap;
   }
 
+  .lodge1,
+  .lodge2,
+  .lodge3 {
+    object-position: bottom;
+  }
+
+  .lodge4,
+  .lodge6 {
+    object-position: center;
+  }
+
+    /* Recreations */
+  .activities1 {
+    object-position: center;
+  }
+
+  .activities5 {
+    object-position: top-right;
+  }
+
+  .activities6 {
+    object-position: center;
+  }
+
+
   /* Footer */
 footer {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+}
+}
+
+@media (min-width: 625px) and (max-width: 838px) {
+/* Filters */
+.economic:hover,
+.family:hover,
+.romantic:hover,
+.pets:hover {
+  color: rgb(90, 18, 48);
+  background: rgb(9, 143, 9);
+  opacity: .6;
+  cursor: pointer;
+}
+
+.economic:focus,
+.family:focus,
+.romantic:focus,
+.pets:focus {
+  color: darkgreen;
+  background: rgb(163, 115, 135);
 }
 }
 
@@ -208,7 +254,6 @@ flex-direction: column;
 }
 }
 
-
 @media  (min-width: 620px) and (max-width: 1350px) {
 main {
   flex-direction: column;
@@ -258,7 +303,7 @@ main {
   }
 
   .header {
-    background-image: url("images/Reservia.svg");
+    background-image: url("../images/Reservia.svg");
     background-repeat: no-repeat;
     background-position: 25px 25px;
   }
@@ -328,25 +373,6 @@ main {
   opacity: 0;
   }
 
-  /* Filters */
-.economic:hover,
-.family:hover,
-.romantic:hover,
-.pets:hover {
-  color: darkgreen;
-  background: lightgreen;
-  opacity: .6;
-  cursor: pointer;
-}
-
-.economic:focus,
-.family:focus,
-.romantic:focus,
-.pets:focus {
-  color: darkgreen;
-  background: rgb(176, 207, 176);
-}
-
   /* Lodging */
 main {
   display: flex;
@@ -394,6 +420,27 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+}
+
+@media (min-width: 838px) {
+/* Filters */
+.economic:hover,
+.family:hover,
+.romantic:hover,
+.pets:hover {
+  color: darkgreen;
+  background: lightgreen;
+  opacity: .6;
+  cursor: pointer;
+}
+
+.economic:focus,
+.family:focus,
+.romantic:focus,
+.pets:focus {
+  color: darkgreen;
+  background: rgb(176, 207, 176);
+  }
 }
 
 @media (min-width: 1350px) {

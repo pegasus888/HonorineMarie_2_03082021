@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservia</title>
-    <meta name="reservia" content="hébergement vacances France">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservia</title>
+  <meta name="reservia" content="hébergement vacances France">
 
-    <!--Import Font Awesome Icons-->
-    <script src="https://kit.fontawesome.com/2d9fcbdfeb.js" crossorigin="anonymous"></script>
+  <!--Import Font Awesome Icons-->
+  <script src="https://kit.fontawesome.com/2d9fcbdfeb.js" crossorigin="anonymous"></script>
 
-    <!--Css links-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utilities.css">
-    <link rel="stylesheet" href="media.css">
-  </head>
+  <!--Css links-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
 
 
 <body>
@@ -23,11 +24,11 @@
     <header class="header">
         <nav class="navbar">
           <ul class="menu1">
-            <li><a class="accommodation" href="main">Hébergements</a></li>
-            <li><a class="activities" href="content5">Activités</a></li>
+            <li><a href="#accommodation" class="accommodation">Hébergements</a></li>
+            <li><a href="#activities" class="activities">Activités</a></li>
           </ul>
           <ul class="menu2">
-            <li><a class="signup" href="S'inscrire"><strong>S'inscrire</strong></a></li>
+            <li><a href="#" class="signup"><strong>S'inscrire</strong></a></li>
           </ul>
         </nav>
     </header>
@@ -95,7 +96,7 @@
   </div><!--./Content2: Intro-->
 
 
-  <main class="main">
+  <main class="main" id="accommodation">
 
     <!--Content3: Main, Hébergement à Marseille-->
     <div class="content3">
@@ -106,7 +107,7 @@
                   <!--LodgeCard1-->
                   <div class="lodgecard1">
                     <a href="#">
-                      <img class="lodge1" src="images/lacannebiere.jpg" alt="bunk beds">
+                      <img src="images/lacannebiere.jpg" alt="A bunk beds room" class="lodge1">
                         <h4 class="lodgeTitle">Auberge la Cannebière</h4>
                           <p class="lodgeNight">Nuit à partir de <strong class="lodgePrice">25€</strong></p>
                             <div class="lodgeStar">
@@ -122,7 +123,7 @@
                   <!--LodgeCard2-->
                   <div class="lodgecard2">
                     <a href="#">
-                      <img class="lodge2" src="images/hotel_duport.jpg" alt="twin room">
+                      <img src="images/hotel_duport.jpg" alt=" A twin room" class="lodge2">
                         <h4 class="lodgeTitle">Hôtel du port</h4>
                           <p class="lodgeNight">Nuit à partir de 52<strong class="lodgePrice">€</strong></p>
                             <div class="lodgeStar">
@@ -138,7 +139,7 @@
                   <!--LodgeCard3-->
                   <div class="lodgecard3">
                     <a href="#">
-                      <img class="lodge3" src="images/lesmouettes.jpg" alt="marble room">
+                      <img src="images/lesmouettes.jpg" alt="A marble styled room" class="lodge3">
                         <h4 class="lodgeTitle">Hôtel Les mouettes</h4>
                           <p class="lodgeNight">Nuit à partir de 76<strong class="lodgePrice">€</strong></p>
                             <div class="lodgeStar">
@@ -156,7 +157,7 @@
                   <!--LodgeCard4-->
                   <div class="lodgecard4">
                     <a href="#">
-                      <img class="lodge4" src="images/hotel_delamer.jpg" alt="blue board single room">
+                      <img src="images/hotel_delamer.jpg" alt="A blue board single room" class="lodge4">
                         <h4 class="lodgeTitle">Hôtel de la mer</h4>
                           <p class="lodgeNight">Nuit à partir de 46<strong class="lodgePrice">€</strong></p>
                             <div class="lodgeStar">
@@ -172,7 +173,7 @@
                   <!--LodgeCard5-->
                   <div class="lodgecard5">
                     <a href="#">
-                      <img class="lodge5" src="images/lepanier.jpg" alt="wood bunk beds">
+                      <img src="images/lepanier.jpg" alt="A wood bunk beds room" class="lodge5">
                         <h4 class="lodgeTitle">Auberge Le Panier</h4>
                           <p class="lodgeNight">Nuit à partir de <strong class="lodgePrice">23€</strong></p>
                           <div class="lodgeStar">
@@ -188,7 +189,7 @@
                   <!--LodgeCard6-->
                   <div class="lodgecard6">
                     <a href="#">
-                      <img class="lodge6" src="images/chez_amina.jpg" alt="brightly lit room">
+                      <img src="images/chez_amina.jpg" alt="A brightly lit room" class="lodge6">
                         <h4 class="lodgeTitle">Hôtel chez Amina</h4>
                           <p class="lodgeNight">Nuit à partir de 96<strong class="lodgePrice">€</strong></p>
                             <div class="lodgeStar">
@@ -221,7 +222,7 @@
               <!--LodgeCard7-->
               <div class="lodgecard7">
                 <a href="#">
-                  <img class="lodge7" src="images/lesoleil_dumatin.jpg" alt="green room">
+                  <img src="images/lesoleil_dumatin.jpg" alt="A green room" class="lodge7">
                     <div class="popinfo">
                       <h4 class="lodgeTitle">Hôtel Le soleil du matin</h4>
                         <p class="lodgeNight">Nuit à partir de 128<strong class="lodgePrice">€</strong></p>
@@ -240,7 +241,7 @@
               <!--LodgeCard8-->
               <div class="lodgecard8">
                 <a href="#">
-                  <img class="lodge8" src="images/aucoeur_deleau.jpg" alt="room with mezzanine">
+                  <img src="images/aucoeur_deleau.jpg" alt="A room with mezzanine" class="lodge8">
                     <div class="popinfo">
                       <h4 class="lodgeTitle">Au coeur de l'eau</h4>
                         <h4 class="lodgeTitle-eau">Chambres d'hôtes</h4>
@@ -259,7 +260,7 @@
               <!--LodgeCard9-->
               <div class="lodgecard9">
                 <a href="#">
-                  <img class="lodge9" src="images/tout_bleu.jpg" alt="double bed">
+                  <img src="images/tout_bleu.jpg" alt="A double bed room" class="lodge9">
                     <div class="popinfo">
                       <h4 class="lodgeTitle">Hôtel Tout bleu et Blanc</h4>
                         <p class="lodgeNight">Nuit à partir de 68<strong class="lodgePrice">€</strong></p>
@@ -279,7 +280,7 @@
   </main>
 
   <!--Content5: Article, Activités à Marseille-->
-  <div class="content5">
+  <div class="content5" id="activities">
     <h3 class="activities-marseilles">Activités à Marseille</h3>
 
       <article class="recreations">
@@ -287,7 +288,7 @@
         <!--ActivityCard1-->
         <div class="activitycard1">
           <a href="#">
-            <img class="activities1" src="images/vieux_port.jpg" alt="Vieux Port">
+            <img src="images/vieux_port.jpg" alt="Vieux Port" class="activities1">
             <div class="caption">
               <h4 class="activitiesTitle">Vieux Port</h4>
             </div>
@@ -298,7 +299,7 @@
           <!--ActivityCard2-->
           <div class="activitycard2">
             <a href="#">
-              <img class="activities2" src="images/pomegues.jpg" alt="Fort de Pomègues">
+              <img src="images/pomegues.jpg" alt="Fort de Pomègues" class="activities2">
               <div class="caption">
                 <h4 class="activitiesTitle">Fort de Pomègues</h4>
               </div>
@@ -308,7 +309,7 @@
           <!--ActivityCard3-->
           <div class="activitycard3">
             <a href="#">
-              <img class="activities3" src="images/iles_dufrioul.jpg" alt="Îles du Frioul">
+              <img src="images/iles_dufrioul.jpg" alt="Îles du Frioul" class="activities3">
               <div class="caption">
                 <h4 class="activitiesTitle">Îles du Frioul</h4>
               </div>
@@ -319,7 +320,7 @@
         <!--ActivityCard4-->
         <div class="activitycard4">
           <a href="#">
-            <img class="activities4" src="images/calanques.jpg" alt="Parc National des Calanques">
+            <img src="images/calanques.jpg" alt="Parc National des Calanques" class="activities4">
             <div class="caption">
               <h4 class="activitiesTitle">Parc National des Calanques</h4>
             </div>
@@ -330,7 +331,7 @@
           <!--ActivityCard5-->
           <div class="activitycard5">
             <a href="#">
-              <img class="activities5" src="images/dame-delagarde.jpg" alt="Notre-Dame-de-la-Garde">
+              <img src="images/dame-delagarde.jpg" alt="Notre-Dame-de-la-Garde" class="activities5">
               <div class="caption">
                 <h4 class="activitiesTitle">Notre-Dame-de-la-Garde</h4>
               </div>
@@ -340,7 +341,7 @@
           <!--ActivityCard6-->
           <div class="activitycard6">
               <a href="#">
-                <img class="activities6" src="images/longchamp.jpg" alt="Parc Longchamp">
+                <img src="images/longchamp.jpg" alt="Parc Longchamp" class="activities6">
                 <div class="caption">
                   <h4 class="activitiesTitle">Parc Longchamp</h4>
                 </div>
@@ -382,7 +383,7 @@
         <ul>
           <li><a href="#">Centre d'aide</a></li>
           <li><a href="#">Nous contacter</a></li>
-      </ul>
+        </ul>
       </div><!--./Assistance-->
     </footer>
 

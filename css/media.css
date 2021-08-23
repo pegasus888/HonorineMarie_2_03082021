@@ -1,161 +1,158 @@
 @media  (max-width: 730px) {
   /* Header */
+.header {
+display: flex;
+background-image: url("../images/Reservia.svg");
+background-repeat: no-repeat;
+background-position: 25px 25px;
+}
 
-  .header {
-    display: flex;
-    background-image: url("../images/Reservia.svg");
-    background-repeat: no-repeat;
-    background-position: 25px 25px;
-  }
+.navbar {
+display: flex;
+}
 
-  .navbar {
-    display: flex;
-  }
+.menu1 {
+display: flex;
+order: 2;
+justify-content: space-between;
+margin: 0px;
+padding: 0px;
+width: 100%;
+border-bottom: 1px solid white;
+}
 
-  .menu1 {
-    display: flex;
-    order: 2;
-    justify-content: space-between;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    border-bottom: 1px solid white;
-  }
+.menu2 {
+order: 1;
+padding: 0px;
+}
 
-  .menu2 {
-    order: 1;
-    padding: 0px;
-  }
+.navbar {
+flex-direction: column;
+justify-content: flex-end;
+align-items: end;
+width: 100%
+}
 
-  .navbar {
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: end;
-    width: 100%
-  }
+.navbar ul li {
+display: flex;
+justify-content: space-between;
+border-bottom: 2px solid lightgrey;
+width: 50%;
+}
 
-  .navbar ul li {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid lightgrey;
-    width: 50%;
-  }
+.navbar .menu2 li {
+border-bottom: 2px solid white;
+padding-right: 10px;
+}
 
-  .navbar .menu2 li {
-    border-bottom: 2px solid white;
-    padding-right: 10px;
-  }
+li a {
+text-align: center;
+}
 
-  li a {
-    text-align: center;
-  }
+.signup {
+color:#0065fc;
+padding-top: 23px;
+}
 
-  .signup {
-    color:#0065fc;
-    padding-top: 23px;
-  }
+.accommodation {
+width: 100%;
+}
 
-  .accommodation {
-    width: 100%;
-  }
+.activities {
+width: 100%;
+}
 
-  .activities {
-    width: 100%;
-  }
+.menu1 li:hover {
+border-color: #0065fc;
+}
 
-  .menu1 li:hover {
-    border-color: #0065fc;
-  }
-
-  .menu1 li:hover a {
-    color: #0065fc;
-  }
-
+.menu1 li:hover a {
+color: #0065fc;
+}
 }
 
 @media  (min-width: 470px) and (max-width: 730px) {
- /* Content2 */
+  /* Content2 */
 .introCatch {
-  text-align: center;
+text-align: center;
 }
 
   /* Lodging */
 .lodging1,
 .lodging2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2em;
-  flex-wrap: wrap;
-  }
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 2em;
+flex-wrap: wrap;
+}
 
-  .lodge1,
-  .lodge2,
-  .lodge3 {
-    object-position: bottom;
-  }
+.lodge1,
+.lodge2,
+.lodge3 {
+object-position: bottom;
+}
 
-  .lodge4,
-  .lodge6 {
-    object-position: center;
-  }
+.lodge4,
+.lodge6 {
+object-position: center;
+}
 
-    /* Recreations */
-  .activities1 {
-    object-position: center;
-  }
+  /* Recreations */
+.activities1 {
+object-position: center;
+}
 
-  .activities5 {
-    object-position: top-right;
-  }
+.activities5 {
+object-position: top-right;
+}
 
-  .activities6 {
-    object-position: center;
-  }
-
+.activities6 {
+object-position: center;
+}
 
   /* Footer */
 footer {
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
+flex-direction: column;
+justify-content: space-between;
+text-align: center;
 }
 }
 
 @media (min-width: 625px) and (max-width: 838px) {
-/* Filters */
+  /* Filters */
 .economic:hover,
 .family:hover,
 .romantic:hover,
 .pets:hover {
-  color: rgb(90, 18, 48);
-  background: rgb(9, 143, 9);
-  opacity: .6;
-  cursor: pointer;
+color: rgb(90, 18, 48);
+background: rgb(9, 143, 9);
+opacity: .6;
+cursor: pointer;
 }
 
 .economic:focus,
 .family:focus,
 .romantic:focus,
 .pets:focus {
-  color: darkgreen;
-  background: rgb(163, 115, 135);
+color: darkgreen;
+background: rgb(163, 115, 135);
 }
 }
 
 @media (min-width: 730px) and (max-width: 1100px) {
   /* Recreations */
 .recreations {
-  flex: 1;
-  flex-wrap: wrap;
-  gap: 2em;
+flex: 1;
+flex-wrap: wrap;
+gap: 2em;
 }
 
 .twocards {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  gap: 2em;
+display: flex;
+flex: 1;
+justify-content: space-between;
+gap: 2em;
 }
 
 .activitycard1,
@@ -164,20 +161,20 @@ footer {
 .activitycard4,
 .activitycard5,
 .activitycard6 {
-  width: 300px;
+width: 300px;
 }
 
 .activitycard1,
 .activitycard4 {
-  margin-inline: auto;
+margin-inline: auto;
 }
 }
 
 @media (min-width: 1100px) {
   /* Recreations */
 .recreations {
-  display: flex;
-  gap: 1em;
+display: flex;
+gap: 1em;
 }
 
 .activitycard1,
@@ -254,204 +251,211 @@ flex-direction: column;
 }
 }
 
-@media  (min-width: 620px) and (max-width: 1350px) {
+@media  (min-width: 620px) and (max-width: 1250px) {
+  /* Lodging */
 main {
-  flex-direction: column;
+flex-direction: column;
 }
 
 .mostpop {
-  justify-content: center;
-  gap: 1em;
+justify-content: center;
+gap: 1em;
 }
 
 .lodgecard7,
 .lodgecard9 {
-  width: 300px;
+width: 300px;
+height: 200px;
 }
 
 .lodgecard8 {
-  width: 350px;
+width: 350px;
+height: 200px;
 }
 
 .lodgecard7 {
-  align-self: flex-start;
+align-self: flex-start;
 }
 
 .lodgecard9 {
-  align-self: flex-end;
+align-self: flex-end;
+}
+
+.lodgecard7 img,
+.lodgecard8 img,
+.lodgecard9 img {
+  height: 192px;
+}
+
+.starpop {
+  margin-top: 2em;
 }
 }
 
 @media  (min-width: 730px) {
-
   /* Background */
 .content3 {
-  background-color: var(--light-color);
+background-color: var(--light-color);
 }
 
 .content3,
 .content4 {
-  border-radius: 2rem;
+border-radius: 2rem;
 }
 
   /* Header */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 5px;
-  }
+.header {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-top: 5px;
+}
 
-  .header {
-    background-image: url("../images/Reservia.svg");
-    background-repeat: no-repeat;
-    background-position: 25px 25px;
-  }
+.header {
+background-image: url("../images/Reservia.svg");
+background-repeat: no-repeat;
+background-position: 25px 25px;
+}
 
-  .navbar {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-  }
+.navbar {
+display: flex;
+width: 100%;
+justify-content: flex-end;
+}
 
-  .navbar ul {
-    display: flex;
-    margin: 0px;
-  }
+.navbar ul {
+display: flex;
+margin: 0px;
+}
 
-  .navbar ul li {
-    border-top: 2px solid white;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 35px;
-  }
+.navbar ul li {
+border-top: 2px solid white;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 35px;
+}
 
-  .menu1 li:hover {
-    border-color: #0065fc;
-  }
+.menu1 li:hover {
+border-color: #0065fc;
+}
 
-  .menu1 li:hover a {
-    color: #0065fc;
-  }
+.menu1 li:hover a {
+color: #0065fc;
+}
 
-  .signup {
-    color:#0065fc;
-    margin-left: -20px;
-  }
+.signup {
+color:#0065fc;
+margin-left: -20px;
+}
 
-  .accommodation {
-    padding-top: 30px;
-  }
+.accommodation {
+padding-top: 30px;
+}
 
-  .activities {
-    padding-top: 30px;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
+.activities {
+padding-top: 30px;
+margin-right: 20px;
+margin-left: 20px;
+}
 
   /* Rechercher btn */
 .submit {
-  background-color: var(--primary-color);
-  color: white;
-  font-weight: 600;
-  border: none;
-  border-radius: 0 1rem 1rem 0;
-  padding: 0 1.5em;
-  font-family: "Raleway", sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
-  width: 10rem;
-  letter-spacing: .0625em;
+background-color: var(--primary-color);
+color: white;
+font-weight: 600;
+border: none;
+border-radius: 0 1rem 1rem 0;
+padding: 0 1.5em;
+font-family: "Raleway", sans-serif;
+font-size: 1rem;
+cursor: pointer;
+width: 10rem;
+letter-spacing: .0625em;
 }
 
 .btnText {
-  display: block;
-  padding-top: 1.2em;
+display: block;
+padding-top: 1.2em;
 }
 
 .searchIcon {
-  opacity: 0;
-  }
+opacity: 0;
+}
 
   /* Lodging */
 main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5em;
-  padding-inline: 1.5rem;
+display: flex;
+flex-wrap: wrap;
+gap: 1.5em;
+padding-inline: 1.5rem;
 }
 
 main > *:nth-child(1) {
-  order: 1;
+order: 1;
 }
 
 main > *:nth-child(2) {
-  order: 2;
+order: 2;
 }
 
 main > *:nth-child(1) {
-  flex: 1 1 70%;
-  min-width: 25ch;
+flex: 1 1 65%;
+min-width: 25ch;
 }
 
 main > *:nth-child(2) {
-  flex: 1 1 25%;
-  min-width: 183px;
+flex: 1 1 30%;
+min-width: 183px;
 }
 
 .lodging1,
 .lodging2 {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1em;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 1em;
 }
 
 .lodging1 > * {
-  flex: 1 1 30%;
+flex: 1 1 30%;
 }
 
 .lodging2 > * {
-  flex: 1 1 30%;
+flex: 1 1 30%;
 }
 
   /* Footer */
 footer {
-  display: flex;
-  justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 }
 
 @media (min-width: 838px) {
-/* Filters */
+  /* Filters */
 .economic:hover,
 .family:hover,
 .romantic:hover,
 .pets:hover {
-  color: darkgreen;
-  background: lightgreen;
-  opacity: .6;
-  cursor: pointer;
+color: darkgreen;
+background: lightgreen;
+opacity: .6;
+cursor: pointer;
 }
 
 .economic:focus,
 .family:focus,
 .romantic:focus,
 .pets:focus {
-  color: darkgreen;
-  background: rgb(176, 207, 176);
-  }
+color: darkgreen;
+background: rgb(176, 207, 176);
+}
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1250px) {
   /* Les plus populaires */
-
-  .content4 {
-    width: 100%;
-    min-width: 183px;
-  }
-
-  .lodgecard8 img {
-    width: 43%;
-  }
+.content4 {
+width: 100%;
+min-width: 183px;
+}
 }

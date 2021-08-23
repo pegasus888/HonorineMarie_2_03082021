@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700;800;900&display=swap');
 
-/* Intro: content2
- Location placeholder Marseille, France */
+        /* Intro: content2
+        Location placeholder Marseille, France */
 .introForm {
   display: inline-flex;
   max-width: 100%;
@@ -9,6 +9,7 @@
   overflow: auto;
   margin-bottom: 40px;
   padding-left: 0;
+  /*! min-width: 200px; */
 }
 
 .locationIcon {
@@ -27,6 +28,7 @@
   width: 14em;
   font-weight: 600;
   font-size: 1rem;
+  min-width: 150px;
 }
 
 .locationInput::placeholder {
@@ -34,30 +36,30 @@
   font-weight: 600;
 }
 
-  /* Rechercher btn */
-  .submit {
-    background-color: var(--primary-color);
-    color: var(--primary-color);
-    border: none;
-    border-radius: 1rem 1rem 1rem 1rem;
-    padding-bottom: 0.75rem;
-    padding-left: 1.25rem;
-    width: 4rem;
-    overflow: hidden;
-    font-family: "Raleway", sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-  }
+        /* Rechercher btn */
+.submit {
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 1rem 1rem 1rem 1rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  width: 4rem;
+  overflow: hidden;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
 
-  .searchIcon {
-    color: white;
-    opacity: 1;
-    font-size: 1.625rem;
-    font-weight: 600;
-    padding-right: .9em;
-  }
+.searchIcon {
+  color: white;
+  opacity: 1;
+  font-size: 1.625rem;
+  font-weight: 600;
+  padding-right: .9em;
+}
 
-/* Filters */
+        /* Filters */
 .wrapIcon {
   color: #0065fc;
   height: 50px;
@@ -162,7 +164,7 @@ height: 50px;
   background: green;
 }
 
- /* Lodging */
+        /* Lodging */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -193,7 +195,9 @@ main > *:nth-child(1) {
 .lodgecard7,
 .lodgecard8,
 .lodgecard9 {
-  min-width: 183px;
+  width: 350px;
+  height: 145px;
+  padding-right: 1.8em;
 }
 
 .lodgecard1 img,
@@ -212,19 +216,15 @@ main > *:nth-child(1) {
 .lodgecard7 img,
 .lodgecard8 img,
 .lodgecard9 img {
-  width: 50%;
+  width: 125px;
   object-fit: cover;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
-}
-
-.lodgecard7 img,
-.lodgecard8 img {
-  height: auto;
+  height: 135px;
 }
 
 .lodgecard9 img {
-  height: 155.2px;
+flex-shrink: 0;
 }
 
 .lodgeTitle,
@@ -232,7 +232,7 @@ main > *:nth-child(1) {
 .lodgeStar,
 .lodgecard8 h4,
 .activitiesTitle {
-  padding-left: 0.8em;
+  padding-left: 1em;
 }
 
 .lodging {
@@ -240,14 +240,14 @@ main > *:nth-child(1) {
 }
 
 .popinfo h4 {
-  margin-top: 1em;
+  margin-top: .5em;
 }
 
 .popinfo .lodgeTitle-eau {
   margin-top: 0;
 }
 
-/* Les plus populaires */
+        /* Les plus populaires */
 main > *:nth-child(2) {
   order: 1;
 }
@@ -271,15 +271,14 @@ main > *:nth-child(2) {
 }
 
 .starpop {
-  margin-top: 1.8em;
-  margin-bottom: .5em;
+  margin-top: 1.3em;
 }
 
 .starpop .eau {
   margin-top: 1.5em;
 }
 
-  /* Recreations */
+        /* Recreations */
 .activitycard1,
 .activitycard2,
 .activitycard3,
@@ -314,7 +313,7 @@ main > *:nth-child(2) {
   object-position: top;
 }
 
-/* Footer */
+        /* Footer */
 .content6 {
   padding-block: 1rem;
   padding-inline: 1.5rem;

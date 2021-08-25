@@ -9,8 +9,14 @@
   overflow: auto;
   margin-bottom: 40px;
   padding-left: 0;
-  /*! min-width: 200px; */
 }
+
+.fas .fa-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .locationIcon {
   background-color: var(--light-color);
@@ -42,8 +48,6 @@
   color: var(--primary-color);
   border: none;
   border-radius: 1rem 1rem 1rem 1rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1.25rem;
   width: 4rem;
   overflow: hidden;
   font-family: "Raleway", sans-serif;
@@ -51,12 +55,18 @@
   cursor: pointer;
 }
 
+.btnText {
+  display: none;
+}
+
 .searchIcon {
   color: white;
   opacity: 1;
   font-size: 1.625rem;
   font-weight: 600;
-  padding-right: .9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
         /* Filters */
@@ -83,7 +93,6 @@
   border-radius: 50%;
   padding: 6px;
   margin-right: 10px;
-  margin-left: -5px;
   margin-top: -5px;
   text-align: center;
 }
@@ -94,7 +103,7 @@
 }
 
 .filtersTitle {
-  margin-right: 70px;
+  margin-right: 100px;
 }
 
 .economic,

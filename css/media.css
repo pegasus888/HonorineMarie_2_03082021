@@ -254,7 +254,7 @@ flex-direction: column;
 }
 }
 
-@media  (min-width: 620px) and (max-width: 1250px) {
+@media  (min-width: 620px) and (max-width: 1350px) {
   /* Lodging */
 main {
 flex-direction: column;

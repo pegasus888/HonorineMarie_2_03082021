@@ -102,6 +102,17 @@ object-position: center;
 }
 
   /* Footer */
+.content6 {
+  padding-inline: 6em;
+}
+
+footer ul {
+  padding-inline-start: 2em;
+}
+}
+
+@media (min-width: 730px) and (max-width: 900px) {
+  /* Footer */
 footer {
 flex-direction: column;
 justify-content: space-between;
@@ -372,111 +383,6 @@ flex: 1 1 30%;
 .lodging2 > * {
 flex: 1 1 30%;
 }
-
-  /* Footer */
-footer {
-display: flex;
-justify-content: space-between;
-}
-}
-
-@media  (min-width: 800px) and (max-width: 1250px) {
-  /* Les plus populaires */
-.lodgecard7 {
-  background-image: url(../images/lesoleil_dumatin.jpg);
-}
-
-.lodgecard8 {
-background-image: url(../images/aucoeur_deleau.jpg);
-background-position: bottom 1% left 60%;
-}
-
-.lodgecard9 {
-background-image: url(../images/tout_bleu.jpg);
-background-position: top 65% right 45%;
-}
-
-.lodgecard7 a,
-.lodgecard8 a,
-.lodgecard9 a {
-  display: inline-flex;
-  flex-direction: row;
-}
-
-.lodgecard7 img,
-.lodgecard8 img,
-.lodgecard9 img {
-  display: none;
-}
-
-.lodgecard7,
-.lodgecard8,
-.lodgecard9 {
-  background-repeat: no-repeat;
-  padding: 150px 250px;
-  background-size: 100%;
-  border: 2px solid white;
-}
-
-.popinfo {
-  width: 250px;
-}
-
-.popinfo h4,
-.popinfo p {
-  font-weight: 900;
-}
-
-.starpop {
-margin-top: 0;
-}
-
-.lodgecard7 h4,
-.lodgecard7 p,
-.lodgecard7 .blue {
-  color: #261466;
-  text-shadow: 1px 1px 1px #dedaec;
-}
-
-.lodgecard8 h4,
-.lodgecard8 p,
-.lodgecard8 .blue {
-  color: #32054a;
-  text-shadow: 1px 1px 1px #dedaec;
-}
-
-.lodgecard8 .grey,
-.lodgecard9 .grey {
-  display: none;
-}
-
-.lodgecard9 h4,
-.lodgecard9 p,
-.lodgecard9 .blue {
-  color: #48220f;
-  text-shadow: 1px 1px 1px #dedaec;
-}
-}
-
-@media (min-width: 838px) {
-  /* Filters */
-.economic:hover,
-.family:hover,
-.romantic:hover,
-.pets:hover {
-color: darkgreen;
-background: lightgreen;
-opacity: .6;
-cursor: pointer;
-}
-
-.economic:focus,
-.family:focus,
-.romantic:focus,
-.pets:focus {
-color: darkgreen;
-background: rgb(176, 207, 176);
-}
 }
 
 @media (min-width: 801px) and (max-width: 1250px) {
@@ -506,6 +412,159 @@ width: 300px;
 .activitycard1,
 .activitycard4 {
 margin-inline: auto;
+}
+}
+
+@media (min-width: 838px) {
+  /* Filters */
+.economic:hover,
+.family:hover,
+.romantic:hover,
+.pets:hover {
+color: darkgreen;
+background: lightgreen;
+opacity: .6;
+cursor: pointer;
+}
+
+.economic:focus,
+.family:focus,
+.romantic:focus,
+.pets:focus {
+color: darkgreen;
+background: rgb(176, 207, 176);
+}
+}
+
+@media (min-width: 900px) {
+  /* Footer */
+footer {
+display: flex;
+justify-content: space-between;
+}
+}
+
+@media  (min-width: 900px) and (max-width: 1250px) {
+  /* Les plus populaires */
+.content4 {
+  width: 100%;
+}
+
+.mostpop {
+  margin: 0 auto;
+}
+
+.lodgecard7 {
+  background-image: url(../images/lesoleil_dumatin.jpg);
+}
+
+.lodgecard8 {
+background-image: url(../images/aucoeur_deleau.jpg);
+background-position: bottom 1% left 60%;
+}
+
+.lodgecard9 {
+background-image: url(../images/tout_bleu.jpg);
+background-position: top 65% right 45%;
+}
+
+.lodgecard7 a,
+.lodgecard8 a,
+.lodgecard9 a {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.lodgecard7 a,
+.lodgecard9 a {
+  padding-left: 9rem;
+}
+
+.lodgecard8 a {
+  padding-left: 3rem;
+}
+
+.lodgecard7 img,
+.lodgecard8 img,
+.lodgecard9 img {
+  display: none;
+}
+
+.lodgecard7,
+.lodgecard8,
+.lodgecard9 {
+  background-repeat: no-repeat;
+  padding: 15% 25%;
+  background-size: cover;
+  border: 2px solid white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lodgecard8,
+.lodgecard9 {
+  margin-top: 10em;
+}
+
+.lodgecard9 {
+margin-bottom: 8em;
+}
+
+.popinfo {
+  width: 300px;
+  margin-top: 8em;
+  margin-left: -21em;
+}
+
+.popinfo h4,
+.popinfo p {
+  font-weight: 900;
+  margin-top: 0;
+}
+
+.starpop {
+  margin-top: 0;
+}
+
+.lodgecard7 h4,
+.lodgecard7 p,
+.lodgecard7 .blue {
+  color: #261466;
+  text-shadow: 1px 1px 1px #dedaec;
+}
+
+.lodgecard7 h4,
+.lodgecard7 p {
+  width: 100%;
+  min-width: 130px;
+}
+
+.lodgecard7 .blue {
+  margin-bottom: .5em;
+}
+
+.lodgecard8 h4,
+.lodgecard8 p,
+.lodgecard8 .blue {
+  color: #32054a;
+  text-shadow: 1px 1px 1px #dedaec;
+}
+
+.lodgecard8 .popinfo {
+margin-left: -15em;
+}
+
+.lodgecard8 .grey,
+.lodgecard9 .grey {
+  display: none;
+}
+
+.lodgecard9 h4,
+.lodgecard9 p,
+.lodgecard9 .blue {
+  color: #48220f;
+  text-shadow: 1px 1px 1px #dedaec;
 }
 }
 

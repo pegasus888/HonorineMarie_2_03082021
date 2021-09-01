@@ -42,7 +42,7 @@
   font-weight: 600;
 }
 
-        /* Rechercher btn */
+        /* "Rechercher" btn */
 .submit {
   background-color: var(--primary-color);
   color: var(--primary-color);
@@ -204,8 +204,9 @@ main > *:nth-child(1) {
 .lodgecard7,
 .lodgecard8,
 .lodgecard9 {
-  width: 350px;
-  height: 145px;
+  width: auto;
+  max-width: 350px;
+  height: auto;
   padding-right: 1.8em;
 }
 
@@ -229,11 +230,7 @@ main > *:nth-child(1) {
   object-fit: cover;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
-  height: 135px;
-}
-
-.lodgecard9 img {
-flex-shrink: 0;
+  height: auto;
 }
 
 .lodgeTitle,
@@ -274,7 +271,7 @@ margin-top: .5em;
   margin-top: 0;
 }
 
-        /* Les plus populaires */
+        /* Mostpop */
 main > *:nth-child(2) {
   order: 1;
 }
@@ -346,8 +343,8 @@ main > *:nth-child(2) {
 
         /* Footer */
 .content6 {
-  padding-block: 1rem;
-  padding-inline: 1.5rem;
+  padding-block: 1em;
+  padding-inline: 1.5em;
 }
 
 footer ul {

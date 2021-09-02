@@ -71,21 +71,21 @@
 
         /* Filters */
 .wrapIcon {
-  color: #0065fc;
+  color: var(--primary-color);
   height: 50px;
   width: 50px;
-  border: 12px solid #deebff;
+  border: 12px solid var(--secondary-color);
   border-radius: 50%;
   justify-content: center;
   align-content: center;
   padding: 4px;
   margin-right: 14px;
   margin-top: -3px;
-  background: #deebff;
+  background: var(--secondary-color);
 }
 
 .wrapIconInfo {
-  color: #0065fc;
+  color: var(--primary-color);
   background-color: white;
   height: 30px;
   width: 30px;

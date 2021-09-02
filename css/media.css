@@ -296,15 +296,15 @@ padding-top: 35px;
 }
 
 .menu1 li:hover {
-border-color: #0065fc;
+border-color: var(--primary-color);
 }
 
 .menu1 li:hover a {
-color: #0065fc;
+color: var(--primary-color);
 }
 
 .signup {
-color:#0065fc;
+color: var(--primary-color);
 margin-left: -20px;
 }
 
@@ -525,12 +525,12 @@ margin-bottom: 8em;
 
 .starpop {
   margin-top: 0;
+  color: var(--primary-color);
 }
 
-.lodgecard7 h4,
-.lodgecard7 p,
-.lodgecard7 .blue {
-  color: #261466;
+.mostpop h4,
+.mostpop p,
+.mostpop .blue {
   text-shadow: 1px 1px 1px #dedaec;
 }
 
@@ -544,27 +544,12 @@ margin-bottom: 8em;
   margin-bottom: .5em;
 }
 
-.lodgecard8 h4,
-.lodgecard8 p,
-.lodgecard8 .blue {
-  color: #32054a;
-  text-shadow: 1px 1px 1px #dedaec;
-}
-
 .lodgecard8 .popinfo {
 margin-left: -15em;
 }
 
-.lodgecard8 .grey,
-.lodgecard9 .grey {
-  display: none;
-}
-
-.lodgecard9 h4,
-.lodgecard9 p,
-.lodgecard9 .blue {
-  color: #48220f;
-  text-shadow: 1px 1px 1px #dedaec;
+.mostpop p {
+  font-weight: 700;
 }
 }
 

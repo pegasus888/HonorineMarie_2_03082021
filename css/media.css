@@ -1,3 +1,14 @@
+@media (max-width: 350px) {
+  /* Header */
+.locationInput {
+  font-size: .8rem;
+}
+
+.searchIcon {
+  font-size: 1.3rem;
+}
+}
+
 @media  (max-width: 730px) {
   /* Header */
 .header {
